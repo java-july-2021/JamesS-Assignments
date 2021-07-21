@@ -32,16 +32,19 @@ public class Animal {
     public int getEnergy(){
         return this.energy;
     }
-    //public void movement(String activity){
-        //int energy;
-        //if (activity.equals("Throw Something")){
-            //energy -= 5;
-        //}else if (activity.equals("Eat Banana")){
-            //energy += 10;
-        //}else if (activity.equals("climb")){
-            //energy -= 10;
-        //}else {
-            //System.out.println("move not recongnized");
-            //return;
-        //}
+    public void movement(String activity){
+        int energy = this.energy;
+        if (activity.equals("Throw Something")){
+            energy -= 5;
+        }else if (activity.equals("Eat Banana")){
+            energy += 10;
+        }else if (activity.equals("climb")){
+            energy -= 10;
+        }else {
+            System.out.println("move not recongnized");
+            return;
+        }
+        this.energy = energy;
+        System.out.println(this.energy);
     }
+}

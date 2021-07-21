@@ -13,10 +13,10 @@ public class Galaxy extends Phone implements Ringable {
     @Override
     public void displayInfo() {
         System.out.println("Version Number: "+ this.getVersionNumber());
-        System.out.println("Battery Percentage: ", this.getBatteryPercentage());
-        System.out.println("Carrier: ", + this.getCarrier());
-        System.out.println("RingTone: ", + this.getRingTone());
+        System.out.println("Battery Percentage: " + this.getBatteryPercentage());
+        System.out.println("Carrier: " + this.getCarrier());
+        System.out.println("RingTone: " + this.getRingTone());
     }
     }
-}
+
 

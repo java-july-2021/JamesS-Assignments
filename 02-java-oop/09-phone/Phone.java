@@ -1,9 +1,9 @@
 public abstract class Phone {
-    private String versionNumber;
-    private int batteryPercentage;
-    private String carrier;
-    private String ringTone;
-    public String getVersionNumber(){
+    protected String versionNumber;
+    protected int batteryPercentage;
+    protected String carrier;
+    protected String ringTone;
+    protected String getVersionNumber(){
         return this.versionNumber;
     }
     public int getBatteryPercentage(){
